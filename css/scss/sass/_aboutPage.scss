@@ -1,0 +1,31 @@
+.about-us{
+    margin:0;
+    background-color: $mainBgColor;
+    padding: 80px 0;
+    .img{
+        @media (max-width:767px) {
+            order: 2;
+        }
+        img{
+            width: 80%;
+        }
+    }
+    .text{
+        @media (max-width:767px) {
+            order: 1;
+            margin-bottom: 30px;
+        }
+        color: #f9f9f9;
+        h1{
+            font-family: $mainFamily;
+        }
+        p{
+            font-size: 15px;
+            line-height: 1.7rem;
+
+        }
+        button{
+            @include buttonDesign();
+         }
+    }
+}

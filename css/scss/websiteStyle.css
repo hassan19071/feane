@@ -1,0 +1,551 @@
+.header {
+  background-image: url("../../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header .navbar {
+  padding: 20px 0 !important;
+}
+.header .navbar a {
+  color: #f9f9f9 !important;
+  font-size: 16px;
+}
+.header .navbar .navbar-brand {
+  font-size: 2rem !important;
+  font-family: "Dancing Script", cursive !important;
+  font-weight: bold;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.header .navbar .navbar-toggler {
+  width: 60px;
+  border: none !important;
+  box-shadow: none !important;
+}
+.header .navbar .navbar-toggler span {
+  width: 100%;
+  height: 3px;
+  background-color: #f9f9f9;
+  margin: 8px 0;
+  display: block;
+}
+.header .navbar .navbar-toggler span.x {
+  transform-origin: left;
+  transform: rotate(40deg);
+}
+.header .navbar .navbar-toggler span.xt {
+  transform-origin: left;
+  transform: rotate(-40deg);
+}
+.header .navbar .navbar-toggler span.dis {
+  opacity: 0;
+}
+.header .navbar .navbar-toggler.rotate {
+  animation: rot .3s linear 1;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.header .navbar .navbar-toggler.xrotate {
+  animation: xrot .3s linear 1;
+}
+@keyframes xrot {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.header .navbar .navbar-collapse ul a {
+  margin: 0 15px;
+  transition: .5s;
+  padding: 0 !important;
+}
+@media (max-width: 991px) {
+  .header .navbar .navbar-collapse ul a {
+    margin: 20px 0 !important;
+  }
+}
+.header .navbar .navbar-collapse ul a:hover {
+  color: #ffbe33 !important;
+}
+.header .navbar .navbar-collapse ul .active {
+  color: #ffbe33 !important;
+}
+.header .navbar .order-data > a {
+  margin: 0 10px;
+  transition: .5s;
+}
+.header .navbar .order-data > a:hover {
+  color: #ffbe33 !important;
+}
+.header .navbar .order-data button {
+  background-color: #ffbe33 !important;
+  border: none;
+  outline: none;
+  width: 150px;
+  color: #f9f9f9;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 8px 0;
+  transition: .5s;
+}
+.header .navbar .order-data button:hover {
+  background-color: #c28b15 !important;
+}
+.header .carousel {
+  padding: 200px 0 200px;
+}
+@media (max-width: 991px) {
+  .header .carousel {
+    padding-top: 80px;
+  }
+}
+.header .carousel .carousel-item h1 {
+  color: #f9f9f9;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive !important;
+}
+.header .carousel .carousel-item p {
+  color: #f9f9f9;
+  font-size: 15px;
+  line-height: 1.8rem;
+  font-weight: 0;
+  margin: 20px 0;
+}
+@media (min-width: 767px) {
+  .header .carousel .carousel-item p {
+    width: 50%;
+  }
+}
+.header .carousel .carousel-item button {
+  background-color: #ffbe33 !important;
+  border: none;
+  outline: none;
+  width: 150px;
+  color: #f9f9f9;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 8px 0;
+  transition: .5s;
+}
+.header .carousel .carousel-item button:hover {
+  background-color: #c28b15 !important;
+}
+.header .carousel .dots {
+  bottom: 50px;
+  margin: 0 !important;
+}
+.header .carousel .dots button {
+  width: 15px;
+  height: 15px;
+  padding: 0 !important;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #f9f9f9;
+}
+.header .carousel .dots button:not(:first-of-type) {
+  margin-left: 8px;
+}
+.header .carousel .dots button.active {
+  background-color: #ffbe33 !important;
+  width: 22px;
+  height: 22px;
+}
+
+.footer {
+  background-color: #222831;
+  color: #f9f9f9;
+  padding: 50px 0 20px;
+}
+.footer .footer-data {
+  margin-top: 40px;
+}
+.footer .footer-data h2 {
+  font-family: "Dancing Script", cursive !important;
+}
+.footer .footer-data ul {
+  margin: 20px 0;
+}
+.footer .footer-data ul li {
+  margin: 20px 0;
+  transition: .5s;
+}
+.footer .footer-data ul li:hover {
+  cursor: pointer;
+  color: #ffbe33 !important;
+}
+.footer .footer-data ul li span {
+  margin-left: 10px;
+  font-size: 15px;
+}
+.footer .footer-data p {
+  font-size: 15px;
+  line-height: 1.7rem;
+  margin: 20px 0;
+}
+.footer .footer-data .icons a {
+  color: #222831;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #f9f9f9;
+  margin: 5px;
+  transition: .5s;
+}
+.footer .footer-data .icons a:hover {
+  color: #ffbe33 !important;
+}
+.footer .foot {
+  margin-top: 50px;
+}
+
+.about-us {
+  margin: 0;
+  background-color: #222831;
+  padding: 80px 0;
+}
+@media (max-width: 767px) {
+  .about-us .img {
+    order: 2;
+  }
+}
+.about-us .img img {
+  width: 80%;
+}
+.about-us .text {
+  color: #f9f9f9;
+}
+@media (max-width: 767px) {
+  .about-us .text {
+    order: 1;
+    margin-bottom: 30px;
+  }
+}
+.about-us .text h1 {
+  font-family: "Dancing Script", cursive !important;
+}
+.about-us .text p {
+  font-size: 15px;
+  line-height: 1.7rem;
+}
+.about-us .text button {
+  background-color: #ffbe33 !important;
+  border: none;
+  outline: none;
+  width: 150px;
+  color: #f9f9f9;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 8px 0;
+  transition: .5s;
+}
+.about-us .text button:hover {
+  background-color: #c28b15 !important;
+}
+
+.book-table {
+  margin: 100px 0;
+}
+.book-table h1 {
+  font-family: "Dancing Script", cursive !important;
+}
+.book-table form {
+  width: 100%;
+}
+.book-table form input {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 10px;
+  color: #535151;
+  outline: none;
+}
+.book-table form input::placeholder {
+  color: #535151;
+}
+.book-table form select {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 10px;
+  color: #535151;
+  outline: none;
+}
+.book-table form button {
+  background-color: #ffbe33 !important;
+  border: none;
+  outline: none;
+  width: 150px;
+  color: #f9f9f9;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 8px 0;
+  transition: .5s;
+  margin: 30px 0;
+}
+.book-table form button:hover {
+  background-color: #c28b15 !important;
+}
+.book-table .map iframe {
+  width: 100%;
+  height: 400px !important;
+  margin: 10px 0;
+}
+
+.menu {
+  margin: 100px 0;
+}
+.menu .container h1 {
+  font-family: "Dancing Script", cursive !important;
+  font-weight: 900;
+}
+.menu .container .spans {
+  margin: 20px 0 40px;
+}
+.menu .container .spans span {
+  padding: 8px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+  user-select: none;
+}
+.menu .container .spans span.active {
+  background-color: #222831;
+  color: #f9f9f9;
+}
+.menu .container .meal.close {
+  transform: scale(0.8);
+  opacity: .4;
+}
+.menu .container .meal {
+  position: relative;
+  margin: 10px 0;
+  padding: 0 !important;
+  background-color: #222831;
+  border-radius: 30px;
+  transition: .5s;
+}
+.menu .container .meal:hover .img img {
+  transform: scale(1.1);
+}
+.menu .container .meal .img {
+  width: 100%;
+  height: 200px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 0px 30px;
+  text-align: center;
+  line-height: 200px;
+}
+.menu .container .meal .img img {
+  width: 150px;
+  transition: .2s;
+}
+.menu .container .meal .text {
+  padding: 20px;
+}
+.menu .container .meal .text h3 {
+  color: #f9f9f9;
+  font-size: 20px;
+}
+.menu .container .meal .text p {
+  color: #f9f9f9;
+  font-size: 15px;
+}
+.menu .container .meal .text i {
+  background: #ffbe33 !important;
+  color: #f9f9f9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  transition: .5s;
+}
+.menu .container .meal .text i:hover {
+  background-color: #d3940b !important;
+}
+.menu button {
+  background-color: #ffbe33 !important;
+  border: none;
+  outline: none;
+  width: 150px;
+  color: #f9f9f9;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 8px 0;
+  transition: .5s;
+  margin-top: 20px;
+}
+.menu button:hover {
+  background-color: #c28b15 !important;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7rem;
+}
+
+/* start examples */
+.examples {
+  margin: 100px 0;
+}
+.examples .ex {
+  background-color: #222831;
+  border-radius: 5px;
+  padding: 20px !important;
+  margin: 15px 0;
+}
+.examples .ex:hover .img img {
+  transform: scale(1.1);
+}
+.examples .ex .img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #ffbe33 !important;
+  overflow: hidden;
+}
+.examples .ex .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: .3s;
+}
+.examples .ex .text {
+  margin-left: 20px;
+}
+.examples .ex .text h3 {
+  font-family: "Dancing Script", cursive !important;
+  color: #f9f9f9;
+}
+.examples .ex .text p {
+  font-size: 40px;
+  color: #f9f9f9;
+  font-family: "Dancing Script", cursive !important;
+  margin: 20px 0 !important;
+}
+.examples .ex .text p span {
+  font-size: 20px;
+}
+.examples .ex .text button {
+  background-color: #ffbe33 !important;
+  border: none;
+  outline: none;
+  width: 150px;
+  color: #f9f9f9;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 8px 0;
+  transition: .5s;
+}
+.examples .ex .text button:hover {
+  background-color: #c28b15 !important;
+}
+@media (min-width: 992px) {
+  .examples .ex:first-of-type {
+    margin-right: 15px;
+  }
+  .examples .ex:last-of-type {
+    margin-left: 15px;
+  }
+}
+
+/* end examples */
+/* start feedbacks */
+.feedbacks {
+  margin: 100px 0;
+}
+.feedbacks h1 {
+  font-family: "Dancing Script", cursive !important;
+}
+.feedbacks .owl-carousel {
+  margin: 50px 0;
+}
+.feedbacks .owl-carousel .owl-nav {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 50px;
+}
+.feedbacks .owl-carousel .owl-nav button {
+  background-color: #ffbe33 !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  outline: none;
+  color: #f9f9f9 !important;
+  font-size: 20px;
+}
+.feedbacks .owl-carousel .text {
+  background-color: #222831;
+  color: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 5px;
+}
+.feedbacks .owl-carousel .text p {
+  font-size: 15px;
+  line-height: 1.7rem;
+}
+.feedbacks .owl-carousel .text h3 {
+  font-size: 20px;
+  margin: 0;
+  font-family: "Dancing Script", cursive !important;
+}
+.feedbacks .owl-carousel .img div {
+  position: relative;
+  margin-top: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #ffbe33 !important;
+}
+.feedbacks .owl-carousel .img div::before {
+  content: " ";
+  border-bottom: 15px solid #ffbe33 !important;
+  border-top: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feedbacks .owl-carousel .img div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* end feedbacks */
+
+/*# sourceMappingURL=websiteStyle.css.map */

@@ -1,0 +1,14 @@
+@mixin buttonDesign() {
+    background-color: $mainColor;
+    border: none;
+    outline: none;
+    width: 150px;
+    color:#f9f9f9;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px 0;
+    transition: .5s;
+    &:hover{
+        background-color: #c28b15 !important;
+    }
+}

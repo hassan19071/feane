@@ -1,0 +1,51 @@
+.footer{
+    background-color: $mainBgColor;
+    color: #f9f9f9;
+    padding: 50px 0 20px;
+    .footer-data{
+        margin-top: 40px;
+        h2{
+            font-family: $mainFamily;
+        }
+        ul{
+            margin: 20px 0;
+            li{
+                margin: 20px 0;
+                transition: .5s;
+                &:hover{
+                    cursor: pointer;
+                    color: $mainColor;
+                }
+                span{
+                    margin-left: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+        p{
+            font-size: 15px;
+            line-height: 1.7rem;
+            margin: 20px 0;
+        }
+        .icons{
+            a{
+                color:$mainBgColor;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 30px;
+                background-color: #f9f9f9;
+                margin: 5px;
+                transition: .5s;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    .foot{
+        margin-top: 50px;
+    }
+}

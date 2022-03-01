@@ -1,0 +1,145 @@
+.header {
+    background-image : url("../../images/hero-bg.jpg");
+    background-size : cover;
+    @media (min-width:992px) {
+       
+    }
+    background-position: center;
+    .navbar{
+        padding: 20px 0 !important;
+        a{
+            color: #f9f9f9 !important;
+            font-size: 16px;
+        }
+        .navbar-brand {
+            font-size: 2rem !important;
+            font-family: $mainFamily ;
+            font-weight: bold;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .navbar-toggler{
+            width: 60px;
+            border: none !important;
+            box-shadow: none !important;
+            span{
+                width: 100%;
+                height: 3px;
+                background-color: #f9f9f9;
+                margin: 8px 0;
+                display: block;
+            }
+            span.x{
+                transform-origin: left;
+                transform: rotate(40deg);
+            }
+            span.xt{
+                transform-origin: left;
+                transform: rotate(-40deg);
+            }
+            span.dis{
+                opacity: 0;
+               
+            }
+        }
+        .navbar-toggler.rotate{
+            animation: rot .3s linear 1;
+        }
+        @keyframes rot {
+            0%{transform: rotate(0deg);} 20%{transform: rotate(90deg)} 50%{transform: rotate(180deg);} 75%{transform: rotate(270deg);} 100%{transform: rotate(360deg);}
+        }
+        .navbar-toggler.xrotate {
+            animation: xrot .3s linear 1;
+        }
+        @keyframes xrot {
+            0%{transform: rotate(0deg);} 20%{transform: rotate(-90deg)} 50%{transform: rotate(-180deg);} 75%{transform: rotate(-270deg);} 100%{transform: rotate(-360deg);}
+        }
+
+        .navbar-collapse {
+            
+            ul{
+                
+                a{
+                    margin: 0 15px;
+                    @media (max-width:991px) {
+                        &{
+                            margin: 20px 0 !important;
+                        }
+                    }
+                    &:hover{
+                        color: $mainColor;
+                    }
+                    transition: .5s;
+                    padding: 0 !important;
+                }
+                .active{
+                    color: $mainColor;
+                }
+            }
+        }
+        .order-data {
+             
+            >a{
+                margin:0 10px;
+                transition:.5s;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+            button{
+                 @include buttonDesign();
+            }
+        }
+    }
+
+    .carousel{
+        padding: 200px 0 200px;
+        @media (max-width:991px) {
+            padding-top:80px ;
+        }
+        .carousel-item{
+            h1{
+                color: #f9f9f9;
+                font-size: 60px;
+                font-family: $mainFamily;
+            }
+            p{
+                color: #f9f9f9;
+                font-size: 15px;
+                line-height: 1.8rem;
+                font-weight: 0;
+                margin: 20px 0;
+                @media (min-width:767px) {
+                    &{
+                        width: 50%;
+                    }
+                }
+            }
+            button{
+                @include buttonDesign();
+            }
+        }
+        .dots{
+            bottom: 50px;
+            margin: 0 !important;
+            button{
+                width: 15px;
+                height: 15px;
+                padding: 0 !important;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                background-color: #f9f9f9; 
+            }
+            button:not(:first-of-type){
+                margin-left:8px;
+            }
+            button.active{
+                background-color: $mainColor;
+                width: 22px;
+                height: 22px;
+            }
+        }
+        
+    }
+}
